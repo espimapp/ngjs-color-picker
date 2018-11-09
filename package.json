@@ -1,0 +1,116 @@
+{
+  "_args": [
+    [
+      "https://github.com/simeg/ngjs-color-picker.git",
+      "/home/elias/PycharmProjects/espim-web-client"
+    ]
+  ],
+  "_from": "git+https://github.com/simeg/ngjs-color-picker.git",
+  "_id": "ngjs-color-picker@1.1.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ngjs-color-picker",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/simeg/ngjs-color-picker/master/package.json",
+      "gitUrl": "git://github.com/simeg/ngjs-color-picker.git",
+      "httpsUrl": "git+https://github.com/simeg/ngjs-color-picker.git",
+      "shortcut": "github:simeg/ngjs-color-picker",
+      "ssh": "git@github.com:simeg/ngjs-color-picker.git",
+      "sshUrl": "git+ssh://git@github.com/simeg/ngjs-color-picker.git",
+      "type": "github"
+    },
+    "name": null,
+    "raw": "https://github.com/simeg/ngjs-color-picker.git",
+    "rawSpec": "https://github.com/simeg/ngjs-color-picker.git",
+    "scope": null,
+    "spec": "git+https://github.com/simeg/ngjs-color-picker.git",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/simeg/ngjs-color-picker.git#d98dfe8cc0fd09d8043819ecae3eed20542c8870",
+  "_shasum": "008ba049f0583a7d9d1ed73d141212ef5d3050d2",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/simeg/ngjs-color-picker.git",
+  "_where": "/home/elias/PycharmProjects/espim-web-client",
+  "author": {
+    "email": "s.egersand@gmail.com",
+    "name": "Simon Egersand"
+  },
+  "bugs": {
+    "url": "https://github.com/simeg/ngjs-color-picker/issues"
+  },
+  "dependencies": {
+    "angular": "^1.2"
+  },
+  "description": "A color picker with a few extra functions - for AngularJS",
+  "devDependencies": {
+    "angular-mocks": "^1.5.8",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.1.18",
+    "copy-webpack-plugin": "^4.0.1",
+    "eslint": "^4.3.0",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.7.1",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.5.2",
+    "jasmine-core": "^2.5.2",
+    "jasmine-node": "^1.14.5",
+    "karma": "^1.3.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-jquery": "^0.1.1",
+    "karma-mocha-reporter": "^2.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "null-loader": "^0.1.1",
+    "phantomjs-prebuilt": "^2.1.13",
+    "postcss-loader": "^2.0.6",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "files": [
+    "!dist/index.html",
+    "dist"
+  ],
+  "gitHead": "d98dfe8cc0fd09d8043819ecae3eed20542c8870",
+  "homepage": "https://github.com/simeg/ngjs-color-picker",
+  "keywords": [
+    "angularjs",
+    "color",
+    "color-picker",
+    "colors",
+    "directive",
+    "gradient",
+    "picker"
+  ],
+  "license": "MIT",
+  "main": "dist/ngjs-color-picker.js",
+  "name": "ngjs-color-picker",
+  "optionalDependencies": {},
+  "readme": "# ngjs-color-picker [![npm](https://img.shields.io/npm/dm/ngjs-color-picker.svg)](https://npmjs.org/package/ngjs-color-picker) [![Build Status](https://travis-ci.org/simeg/ngjs-color-picker.svg?branch=master)](https://travis-ci.org/simeg/ngjs-color-picker)\n\nA small directive which essentially is a color picker but with a few extra functions - for AngularJS. Based on [ng-color-picker](https://github.com/joujiahe/ng-color-picker).\n\n**Requirements**: Angular 1.2+\n\n![Screenshot](assets/screenshot.png)\n\n# Features\n- Customize the appearance of the color picker (vertical, horizontal, columns etc.)\n- Generate random colors\n- Generate gradient colors\n\n# Demo\n- [Demo](http://simeg.github.io/ngjs-color-picker)\n- [Plunker](http://embed.plnkr.co/INXf3efkYeP1gWaF9SId/preview)\n\n# Installation\n## npm:\n``` bash\nnpm install --save ngjs-color-picker\n```\n\nYou may have to run\n\n``` bash\ngrunt wiredep\n```\n\nto make grunt automatically add the needed files to your `index.html`.\n\n## Manually:\nClone or [download](https://github.com/simeg/ngjs-color-picker/archive/master.zip) the repository and include the production file in your application.\n\n``` html\n<script type=\"text/javascript\" src=\"dist/ngjs-color-picker.js\"></script>\n```\n\nInject the directive as a dependency in your app:\n\n``` javascript\nangular.module('myApp', ['ngjsColorPicker']);\n```\n\n# Usage and documentation\nFor documentation, examples and usage see the [GitHub page for this repository](http://simeg.github.io/ngjs-color-picker).\n\n## Option prioritization\n1. Custom colors\n2. Random colors\n3. Gradient\n4. Default colors\n\n# Contribute :raised_hands:\nRun `npm install` and then you're able to start dev server with\n``` bash\nnpm run serve\n```\n\nThe server is then available at [http://localhost:8080](http://localhost:8080).\n\nThe file `dev/app/ngjs-color-picker.js` is a symlink to `source/ngjs-color-picker.js`, so you can edit either one of them and the change will be shown on the dev server.\n\n(Development server environment created using awesome [angular-webpack](https://github.com/preboot/angular-webpack)).\n\n# TODO\n* **See [issues](https://github.com/simeg/ngjs-color-picker/issues)**\n* Click (or something) to get the hex-code for the color (rgb should also be available)\n* Add reverse option for gradient\n* Include color themes (Good palettes: http://jsfiddle.net/nicgirault/bqph3pkL/)\n* Add option to select rows instead of columns\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simeg/ngjs-color-picker.git"
+  },
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "commit": "npm run pre-commit",
+    "lint": "./node_modules/eslint/bin/eslint.js .eslintrc.yml './**/*.js'",
+    "pre-commit": "npm run lint && npm run test",
+    "serve": "webpack-dev-server --history-api-fallback --inline --progress",
+    "test": "./node_modules/karma/bin/karma start ./test/karma.conf.js --single-run",
+    "test:watch": "./node_modules/karma/bin/karma start ./test/karma.conf.js"
+  },
+  "version": "1.1.2"
+}
