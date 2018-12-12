@@ -27,7 +27,7 @@
                 selector: "li.brRound",
                 rules: ["border-radius: 0 0 5px 0;"]
             }, {selector: "li.blRound", rules: ["border-radius: 0 0 0 5px;"]}],
-            r = ["#B22222", "#dc2127", "#FF8C00", "#CD853F", "#FFD700", "#008000", "#0F5394",  "#dbadff", "#8B008B",  "#778899"],
+            r = ["#0F5394", "#B22222", "#dc2127", "#FF8C00", "#CD853F", "#FFD700", "#008000", "#dbadff", "#8B008B", "#778899"],
             n = {colors: r, options: {size: 20, columns: null, randomColors: null}, gradient: null}, t = function (o) {
                 o.colors = r, o.options = o.options || {}, o.options.size = o.options.size || n.options.size, o.options.columns = o.options.columns || n.options.columns, o.options.randomColors = o.options.randomColors || n.options.randomColors, o.options.total = o.options.total || o.colors.length, o.options.horizontal = !o.options.hasOwnProperty("horizontal") || o.options.horizontal, o.options.roundCorners = !!o.options.hasOwnProperty("roundCorners") && o.options.roundCorners, o.gradient = o.gradient || n.gradient, o.ulCss = {}, o.css = {}, o.css.display = o.options.horizontal ? "inline-block" : "block", o.css.width = o.css.height = o.options.size + "px"
             }, e = function (o) {
